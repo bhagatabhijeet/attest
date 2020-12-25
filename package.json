@@ -1,0 +1,23 @@
+{
+  "name": "attest",
+  "version": "1.0.0",
+  "description": "A Test Case Management System designed to make test designing and execution simple.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhagatabhijeet/attest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhagatabhijeet/attest/issues"
+  },
+  "homepage": "https://github.com/bhagatabhijeet/attest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
