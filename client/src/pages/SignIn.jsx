@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import logoTrans from "../assets/images/logo-trans.png"
 
 function Copyright() {
   return (
@@ -53,9 +54,10 @@ export default function SignIn() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar>
+        {/* <Avatar className={classes.avatar}> */}
+          {/* <logoTrans /> */}
+          <img src={logoTrans} alt="transparent logo"/>
+        {/* </Avatar> */}
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
