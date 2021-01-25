@@ -3,12 +3,13 @@ import translogo from "./assets/images/logo-trans.png"
 import texttranslogo from "./assets/images/textlogo-trans.png"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SignIn from "./pages/SignIn";
+import HomePage from "./pages/HomePage";
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <Route pate="/" component={SignIn}/>
+      <Route exact path="/" component={HomePage}/>
     </Router>
     // <div className="App">
     //   <header className="App-header">
