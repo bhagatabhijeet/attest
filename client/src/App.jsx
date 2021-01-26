@@ -4,12 +4,17 @@ import texttranslogo from "./assets/images/textlogo-trans.png"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SignIn from "./pages/SignIn";
 import HomePage from "./pages/HomePage";
+import AdminSignIn from './pages/AdminSignIn';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <Route exact path="/" component={HomePage}/>
+      <Route path="/signin" component={SignIn}/>
+      <Route path="/admin" component={AdminSignIn}/>
+      <Route path="/signin" component={SignIn}/>
+      
     </Router>
     // <div className="App">
     //   <header className="App-header">
