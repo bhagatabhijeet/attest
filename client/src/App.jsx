@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import translogo from "./assets/images/logo-trans.png"
 import texttranslogo from "./assets/images/textlogo-trans.png"
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SignIn from "./pages/SignIn";
 import HomePage from "./pages/HomePage";
 import AdminSignIn from './pages/AdminSignIn';
@@ -11,11 +11,12 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <Switch>      
       <Route exact path="/" component={HomePage}/>
       <Route path="/signin" component={SignIn}/>
       <Route path="/admin" component={AdminSignIn}/>      
       <Route path="/signup" component={SignUp}/>
-      
+      </Switch>
     </Router>
     // <div className="App">
     //   <header className="App-header">
